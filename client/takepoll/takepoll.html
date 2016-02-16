@@ -1,0 +1,25 @@
+<ion-view>
+    <ion-content>
+        <div class="card" ng-repeat="po in poll">
+            <div class="item item-text-wrap">
+                <div >
+                    {{po.question}}
+
+                    <div ng-repeat="ops in po.option">
+                        <input type="radio" name="group" class="myradio" ng-click="op.opt = ops.name"><i class="op">{{ops.name}}</i><br> 
+
+                    </div>
+
+                    <button class="button button-small button-positive col col-10 mybtt"  value="save" ng-click="save(op.opt, po._id)">
+                        save
+                    </button>   
+                    <div ng-repeat="re in res track by $index" ng-if="re.ques == po.question">
+                        <div ng-repeat="r in re.option track by $index">
+                            {{r.option}}:{{r.count}}
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

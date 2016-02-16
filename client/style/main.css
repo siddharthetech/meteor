@@ -1,0 +1,35 @@
+body {
+    background-color: rgba(0,0,0,.2);
+    padding-top: 70px;
+}
+.navbar {
+    background-color: #272424;
+}
+div#ab {
+    width: 500px;
+    background-color: #fff;
+    /* margin: 50px; */
+}
+
+
+
+
+ion-header-bar.bar-calm.bar.bar-header {
+    background-color: #333;
+    border-color: #333;
+}
+.list.mylist {
+    width: 250px;
+}
+.mycard {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.log {
+    text-align: center;
+}
+button.button.button-small.button-positive.mybt {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}

@@ -1,0 +1,26 @@
+<ion-view>
+    <div class="card mycard">
+        <div class="item item-text-wrap">
+            <div class="log"><h1>Register</h1></div>
+            <div class="list mylist">
+
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Email</span>
+                    <input type="email" placeholder="Email" ng-model="user.email">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Password</span>
+                    <input type="password" placeholder="Password" ng-model="user.password">
+                </label>
+                <button class="button button-small button-positive col  mybt" type="submit" ng-click="submit()">
+                    Register
+                </button>
+                <button class="button button-small button-positive col  mybt" type="submit"  ui-sref='login'>
+                    Login
+                </button> 
+
+            </div>
+        </div>
+    </div>
+
+</ion-view>

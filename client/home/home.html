@@ -1,0 +1,40 @@
+<ion-view>
+    <ion-content>
+        <div>
+
+            <div class="card" id="ab">
+                <div class="item item-text-wrap">
+                    <label class="item item-input item-stacked-label m">
+                        <span class="input-label ">Enter Your Question</span>
+                        <textarea   placeholder="enter question" ng-model="model.A1"></textarea>
+                    </label>
+                    <lebel  class="item item-input item-stacked-label m" ng-repeat="choice in choices track by $index">
+
+                        <input type="text" ng-model="choice.name" name="" placeholder="enter option">
+                        <!--<input type="text" ng-model="choice.id" name="" placeholder="enter option">-->
+                    </lebel>
+
+                    <label  class="item item-input item-stacked-label m">
+                        <button class="addfields" ng-click="addNewChoice()">Add fields</button>
+                    </label>
+
+                    <!--                <label class="item item-input item-stacked-label m" ng-click="openDatePicker()">
+                                        <span class="input-label">Disable Date</span>
+                    
+                                        <input class="form-control"  type="text" id="txt5" ng-model="model.date" readonly>
+                    
+                                    </label>-->
+                    <label class="item item-input item-stacked-label m">
+                        <button class="button button-small button-positive col col-25" type="submit" ng-click="submit1(Uid)">
+                            Submit
+                        </button>
+
+                    </label>
+
+                </div>
+            </div>
+
+
+        </div>
+    </ion-content>
+</ion-view>
