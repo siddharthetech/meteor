@@ -19,9 +19,9 @@ angular.module('poll').controller('loginCtrl', ['$scope', '$state', function($sc
                 password: $scope.user.password
             }, function(error, result) {
                 if (error) {
-                    
-                    alert(error.reason);
-                    console.log(error);
+                    toastr.error(error.reason);
+//                    alert();
+//                    console.log(error);
                 }
                 else {
                     console.log(Meteor.users.find().fetch());
@@ -37,7 +37,7 @@ angular.module('poll').controller('loginCtrl', ['$scope', '$state', function($sc
             console.log($scope.log.email)
             Meteor.loginWithPassword($scope.log.email, $scope.log.password, function(err) {
                 if (err) {
-                    alert(err.reason);
+                    toastr.error(err.reason);
                     console.log(err);
                 } else {
 

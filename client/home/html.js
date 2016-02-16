@@ -23,7 +23,7 @@ angular.module('poll').controller('homeCtrl', ['$scope', '$state', '$meteor', fu
                     }
                     if (result) {
                         console.log(result); //the _id of new object if successful
-                        alert('success');
+                       toastr.success('success');
                     }
 
                 });
