@@ -1,5 +1,6 @@
 if (Meteor.isClient) {
-    angular.module('poll', ['angular-meteor', 'ui.router', 'accounts.ui', 'ui.bootstrap', 'ngStorage','ionic'])
+   
+    angular.module('poll', ['angular-meteor', 'ui.router', 'accounts.ui', 'ui.bootstrap', 'ngStorage', 'ionic'])
             .run(function(timeStorage, $state) {
 
                 console.log('run');
